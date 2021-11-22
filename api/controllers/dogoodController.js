@@ -3,7 +3,7 @@ const camp = mongoose.model('Campaign');
 
 exports.list_all_camps = (req, res) => {
 	
-	camp.find({}, (err, camps) => {
+	camp.find({status: 'Pending'}, (err, camps) => {
 		if(err) res.send(err);
 		res.json(camps);
 	});
