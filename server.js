@@ -6,7 +6,7 @@ const formData = require('express-form-data');
 const os = require("os");
 const morgan = require("morgan");
 const config = require("./config/db");
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 const app = express();
 const path = require('path');
 
